@@ -1,0 +1,47 @@
+# ── Virtual environments ──
+venv/
+env/
+.venv/
+ENV/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── IDE / editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Project-specific ──
+# Model cache (HuggingFace downloads models on first run — too large for git)
+.cache/
+~/.cache/huggingface/
+models/
+*.bin
+*.safetensors
+
+# Local config / experiment dumps
+*.log
+*.pkl
+*.pickle
+.env
+
+# Coverage / tests
+.coverage
+.pytest_cache/
+htmlcov/
